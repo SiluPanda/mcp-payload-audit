@@ -1,0 +1,50 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mcp-payload-audit"
+version = "0.1.0"
+description = "Offline byte budgets and duplication diagnostics for saved MCP tool results."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{name = "Silu Panda"}]
+keywords = ["mcp", "cli", "testing", "context", "payload"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Software Development :: Testing",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/SiluPanda/mcp-payload-audit"
+Issues = "https://github.com/SiluPanda/mcp-payload-audit/issues"
+
+[project.scripts]
+mcp-payload-audit = "mcp_payload_audit.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8,<10", "pytest-cov>=6,<8", "ruff>=0.12,<1"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.coverage.run]
+source = ["mcp_payload_audit"]
+branch = true
+patch = ["subprocess"]
+
+[tool.coverage.report]
+show_missing = true

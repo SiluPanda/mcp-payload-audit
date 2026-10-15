@@ -1,0 +1,103 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"rows\": [\n    {\n      \"route\": \"Redwood → Harbor\",\n      \"date\": \"2026-11-03\",\n      \"fare_units\": 125,\n      \"currency\": \"EXAMPLE\",\n      \"description\": \"Synthetic fixture; not a real flight or fare.\"\n    },\n    {\n      \"route\": \"Redwood → Summit\",\n      \"date\": \"2026-11-07\",\n      \"fare_units\": 148,\n      \"currency\": \"EXAMPLE\",\n      \"description\": \"Synthetic fixture; not a real flight or fare.\"\n    },\n    {\n      \"route\": \"Redwood → Harbor\",\n      \"date\": \"2026-11-03\",\n      \"fare_units\": 125,\n      \"currency\": \"EXAMPLE\",\n      \"description\": \"Synthetic fixture; not a real flight or fare.\"\n    },\n    {\n      \"route\": \"Redwood → Summit\",\n      \"date\": \"2026-11-07\",\n      \"fare_units\": 148,\n      \"currency\": \"EXAMPLE\",\n      \"description\": \"Synthetic fixture; not a real flight or fare.\"\n    },\n    {\n      \"route\": \"Redwood → Harbor\",\n      \"date\": \"2026-11-03\",\n      \"fare_units\": 125,\n      \"currency\": \"EXAMPLE\",\n      \"description\": \"Synthetic fixture; not a real flight or fare.\"\n    },\n    {\n      \"route\": \"Redwood → Summit\",\n      \"date\": \"2026-11-07\",\n      \"fare_units\": 148,\n      \"currency\": \"EXAMPLE\",\n      \"description\": \"Synthetic fixture; not a real flight or fare.\"\n    }\n  ],\n  \"evidence\": {\n    \"normalized_result\": [\n      {\n        \"route\": \"Redwood → Harbor\",\n        \"date\": \"2026-11-03\",\n        \"fare_units\": 125,\n        \"currency\": \"EXAMPLE\",\n        \"description\": \"Synthetic fixture; not a real flight or fare.\"\n      },\n      {\n        \"route\": \"Redwood → Summit\",\n        \"date\": \"2026-11-07\",\n        \"fare_units\": 148,\n        \"currency\": \"EXAMPLE\",\n        \"description\": \"Synthetic fixture; not a real flight or fare.\"\n      },\n      {\n        \"route\": \"Redwood → Harbor\",\n        \"date\": \"2026-11-03\",\n        \"fare_units\": 125,\n        \"currency\": \"EXAMPLE\",\n        \"description\": \"Synthetic fixture; not a real flight or fare.\"\n      },\n      {\n        \"route\": \"Redwood → Summit\",\n        \"date\": \"2026-11-07\",\n        \"fare_units\": 148,\n        \"currency\": \"EXAMPLE\",\n        \"description\": \"Synthetic fixture; not a real flight or fare.\"\n      },\n      {\n        \"route\": \"Redwood → Harbor\",\n        \"date\": \"2026-11-03\",\n        \"fare_units\": 125,\n        \"currency\": \"EXAMPLE\",\n        \"description\": \"Synthetic fixture; not a real flight or fare.\"\n      },\n      {\n        \"route\": \"Redwood → Summit\",\n        \"date\": \"2026-11-07\",\n        \"fare_units\": 148,\n        \"currency\": \"EXAMPLE\",\n        \"description\": \"Synthetic fixture; not a real flight or fare.\"\n      }\n    ]\n  },\n  \"total\": 2,\n  \"complete\": true\n}"
+    }
+  ],
+  "structuredContent": {
+    "rows": [
+      {
+        "route": "Redwood → Harbor",
+        "date": "2026-11-03",
+        "fare_units": 125,
+        "currency": "EXAMPLE",
+        "description": "Synthetic fixture; not a real flight or fare."
+      },
+      {
+        "route": "Redwood → Summit",
+        "date": "2026-11-07",
+        "fare_units": 148,
+        "currency": "EXAMPLE",
+        "description": "Synthetic fixture; not a real flight or fare."
+      },
+      {
+        "route": "Redwood → Harbor",
+        "date": "2026-11-03",
+        "fare_units": 125,
+        "currency": "EXAMPLE",
+        "description": "Synthetic fixture; not a real flight or fare."
+      },
+      {
+        "route": "Redwood → Summit",
+        "date": "2026-11-07",
+        "fare_units": 148,
+        "currency": "EXAMPLE",
+        "description": "Synthetic fixture; not a real flight or fare."
+      },
+      {
+        "route": "Redwood → Harbor",
+        "date": "2026-11-03",
+        "fare_units": 125,
+        "currency": "EXAMPLE",
+        "description": "Synthetic fixture; not a real flight or fare."
+      },
+      {
+        "route": "Redwood → Summit",
+        "date": "2026-11-07",
+        "fare_units": 148,
+        "currency": "EXAMPLE",
+        "description": "Synthetic fixture; not a real flight or fare."
+      }
+    ],
+    "evidence": {
+      "normalized_result": [
+        {
+          "route": "Redwood → Harbor",
+          "date": "2026-11-03",
+          "fare_units": 125,
+          "currency": "EXAMPLE",
+          "description": "Synthetic fixture; not a real flight or fare."
+        },
+        {
+          "route": "Redwood → Summit",
+          "date": "2026-11-07",
+          "fare_units": 148,
+          "currency": "EXAMPLE",
+          "description": "Synthetic fixture; not a real flight or fare."
+        },
+        {
+          "route": "Redwood → Harbor",
+          "date": "2026-11-03",
+          "fare_units": 125,
+          "currency": "EXAMPLE",
+          "description": "Synthetic fixture; not a real flight or fare."
+        },
+        {
+          "route": "Redwood → Summit",
+          "date": "2026-11-07",
+          "fare_units": 148,
+          "currency": "EXAMPLE",
+          "description": "Synthetic fixture; not a real flight or fare."
+        },
+        {
+          "route": "Redwood → Harbor",
+          "date": "2026-11-03",
+          "fare_units": 125,
+          "currency": "EXAMPLE",
+          "description": "Synthetic fixture; not a real flight or fare."
+        },
+        {
+          "route": "Redwood → Summit",
+          "date": "2026-11-07",
+          "fare_units": 148,
+          "currency": "EXAMPLE",
+          "description": "Synthetic fixture; not a real flight or fare."
+        }
+      ]
+    },
+    "total": 2,
+    "complete": true
+  },
+  "isError": false
+}
