@@ -125,15 +125,6 @@ See [measurement and input contract](docs/measurement.md).
   until reviewed. `captures/` is gitignored for local experiments.
 - No automatic compression, semantic deduplication, pagination, or repair.
 
-## Why this exists
-
-An October 2026 scan of developer discussions surfaced concrete oversized and
-repeated MCP-result reports. Existing tools already cover live response testing,
-schema budgets, runtime compression, and context tracing. This project offers a
-narrow alternative: **diagnose and gate a saved response without starting its
-server**. It is a hypothesis-driven utility, not a claim of a new category or
-validated market demand. Read the [source-backed research and alternatives](docs/research.md).
-
 ## Development
 
 With [uv](https://docs.astral.sh/uv/):
