@@ -54,6 +54,27 @@ def test_closed_pipe_has_controlled_exit():
     assert stderr == b""
 
 
+def test_output_oserror_has_controlled_exit():
+    # Exercise the EINVAL path even on POSIX; Windows closed pipes use this form.
+    script = (
+        "import mcp_payload_audit.cli as cli\n"
+        "def fail(*args):\n"
+        "    raise OSError(22, 'output unavailable')\n"
+        "cli._render = fail\n"
+        "raise SystemExit(cli.main(['audit', '-']))\n"
+    )
+    process = subprocess.run(
+        [sys.executable, "-c", script],
+        input='{"content":[]}',
+        capture_output=True,
+        text=True,
+        env={**os.environ, "PYTHONPATH": str(ROOT / "src")},
+        timeout=30,
+    )
+    assert process.returncode == 2
+    assert process.stderr == ""
+
+
 def test_numeric_matching_uses_documented_parsed_float_semantics():
     result = loads_document('{"content":[{"type":"text","text":"1e-999"}],"structuredContent":0.0}')
     assert analyze_result(result)["mirror_count"] == 1

@@ -33,7 +33,7 @@ testing, adoption, or willingness-to-pay claims are implied.
   launches. Search filters and relative ages sometimes disagreed. The principal
   thread below was dated from its JSON `created_utc`, not its search label.
   This was not a full Reddit scrape or a representative sample.
-- **X/Twitter:** eight public web searches combined `site:x.com` or
+- **X/Twitter:** multiple public web-search queries combined `site:x.com` or
   `site:twitter.com` with agent/MCP/tool-call/debugging terms and September–October
   2026 dates or `after:`/`before:` bounds. No relevant, date-verified posts
   surfaced. **X is a coverage gap**, not corroborating evidence.

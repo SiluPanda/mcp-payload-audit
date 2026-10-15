@@ -227,7 +227,8 @@ def main(argv: list[str] | None = None) -> int:
         else:
             print(f"mcp-payload-audit: {message}", file=sys.stderr)
         return 2
-    except BrokenPipeError:
+    except OSError:
+        # Windows can report a closed pipe as EINVAL rather than BrokenPipeError.
         # Prevent a second buffered-write error during interpreter shutdown.
         with open(os.devnull, "w") as sink:
             os.dup2(sink.fileno(), sys.stdout.fileno())
