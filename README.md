@@ -13,6 +13,12 @@ fields. Put a byte ceiling or a fixture-growth check in CI.
 - Human-readable and versioned JSON reports; useful exit codes for CI.
 - Python 3.11+. MIT licensed. Early-stage `0.1.0`.
 
+## How it works
+
+![Workflow: audit one saved MCP result or compare two inputs, inspect sizes and duplication locally, then produce reports and optional CI budget checks.](docs/assets/workflow.svg)
+
+[Editable Excalidraw source](docs/assets/workflow.excalidraw)
+
 ## Quick start
 
 ```sh
